@@ -35,7 +35,9 @@ export default {
   },
   methods:{
     incrementQuestionCounter(){
-      this.index++;
+      if(this.index !== this.questions.length){
+        this.index++;
+      }
     },
     increment(isCorrect){
       if(isCorrect){
